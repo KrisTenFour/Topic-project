@@ -1,0 +1,15 @@
+h1, h2{
+    font-family: 'Syne', sans-serif;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+footer {
+    font-family: 'Eczar', serif;
+}
