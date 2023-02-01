@@ -1,5 +1,5 @@
 body {
-    background: #31304c;
+    background: #2c2b44;
     text-align: center;
 
 }
@@ -36,9 +36,18 @@ h3 {
 }
 
 p, footer {
+    color: white;
     letter-spacing: 0.5px;
 }
 
 footer {
     font-family: 'Eczar', serif;
+}
+
+footer a {
+    color: blue;
+}
+
+footer p {
+    margin: 0;
 }
