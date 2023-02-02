@@ -8,6 +8,12 @@ body {
     margin: 0 auto;
 }
 
+header .button,
+section,
+footer {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 header {
     padding: 200px 30px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../images/hero-image.jpg");
@@ -18,11 +24,24 @@ header {
     text-align: center;
 }
 
+header .button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 18px 25px;
+    color: white;
+    background: #545381;
+    border-radius: 2mm;
+    text-decoration: none;
+}
+
+header .button:hover {
+    background: #2c2b44;
+}
+
 section {
     padding: 90px 100px;
     background: white;
     align-items: center;
-    font-family: 'Noto Sans', sans-serif;
 }
 
 section p {
