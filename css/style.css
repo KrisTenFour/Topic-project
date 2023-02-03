@@ -140,6 +140,11 @@ footer a {
 
 footer p {
     margin: 0;
+    font-size: 11px;
+}
+
+.footer-about-website li {
+    margin-bottom: 15px;
 }
 
 @media (max-width: 991px) {
@@ -171,6 +176,10 @@ footer p {
     footer {
         padding: 50px 100px;
         ;
+    }
+
+    .footer-about-website li {
+        margin-bottom: 5px;
     }
 }
 
@@ -223,12 +232,19 @@ footer p {
     }
 
     footer {
-        font-size: 12px;
-        padding: 35px;
+        padding: 25px 35px;
+    }
+
+    footer ul li {
+        font-size: 13px;
     }
 
     footer h3 {
         margin: 0;
+    }
+
+    .grid {
+        gap: 20px;
     }
 
     .grid img {
