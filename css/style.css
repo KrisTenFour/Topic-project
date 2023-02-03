@@ -156,7 +156,7 @@ footer p {
     }
 
     section {
-        padding: 30px 60px;
+        padding: 20px 60px;
         text-align: center;
     }
 
@@ -179,10 +179,6 @@ footer p {
         padding: 150px 30px;
     }
 
-    section {
-        padding: 30px 75px;
-    }
-
     footer {
         padding: 35px 60px;
     }
@@ -201,6 +197,11 @@ footer p {
         padding: 100px 30px;
     }
 
+    header .button {
+        padding: 14px 22px;
+        font-size: 13px;
+    }
+
     h1 {
         font-size: 34px;
     }
@@ -214,14 +215,23 @@ footer p {
     }
 
     section {
-        padding: 20px 65px;
+        padding: 20px 35px;
     }
 
     section h2 {
-        font-size: 21px;
+        font-size: 24px;
     }
 
     footer {
-        font-size: 14px;
+        font-size: 12px;
+        padding: 35px;
+    }
+
+    footer h3 {
+        margin: 0;
+    }
+
+    .grid img {
+        max-width: 90%;
     }
 }
