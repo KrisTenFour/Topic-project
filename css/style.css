@@ -40,7 +40,7 @@ header .button:hover {
 }
 
 section {
-    padding: 90px 100px;
+    padding: 100px 135px;
     background: white;
     align-items: center;
 }
@@ -52,6 +52,18 @@ section p {
 section h3 {
     opacity: 40%;
     text-transform: uppercase;
+}
+
+section .img-caption {
+    margin: 0;
+    font-size: 10px
+}
+
+section .secondary {
+    background-image: url("/images/section-bg-image.jpg");
+    background-position: right top;
+    background-size: 30%;
+    background-repeat: no-repeat;
 }
 
 h1,
@@ -87,12 +99,13 @@ footer {
 
 .grid {
     display: grid;
-    gap: 50px;
+    gap: 70px;
 }
 
 .grid img {
-    max-width: 100%;
+    max-width: 108%;
     border-radius: 2mm;
+    align-items: center;
 }
 
 .grid-2-col-1fr-1fr {
@@ -160,7 +173,7 @@ footer p {
         font-size: 14px;
     }
 
-    section {
+    section .primary {
         padding: 20px 60px;
         text-align: center;
     }
@@ -223,11 +236,11 @@ footer p {
         font-size: 13px;
     }
 
-    section {
+    section .primary {
         padding: 20px 35px;
     }
 
-    section h2 {
+    section .primary h2 {
         font-size: 24px;
     }
 
