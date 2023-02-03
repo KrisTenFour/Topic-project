@@ -40,9 +40,9 @@ header .button:hover {
 }
 
 section {
-    padding: 100px 135px;
-    background: white;
-    align-items: center;
+    max-width: 100%;
+    padding: 100px;
+    background: #F8F8F8;
 }
 
 section p {
@@ -59,12 +59,49 @@ section .img-caption {
     font-size: 10px
 }
 
-section .secondary {
+section.secondary {
+    padding: 85px 38px;
+    background: white;
     background-image: url("/images/section-bg-image.jpg");
     background-position: right top;
     background-size: 30%;
     background-repeat: no-repeat;
 }
+
+section.secondary .grid-3-col-equal {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+section.secondary .card {
+    margin-top: 30px;
+    padding: 0 15px;
+    background: #F8F8F8;
+    border-radius: 2mm;
+}
+
+section.secondary .card-header {
+    margin: 25px auto;
+}
+
+section.secondary .card-body h2 {
+    font-size: 25px;
+}
+
+section.secondary .card-footer {
+    display: block;
+    margin: 20px auto 20px;
+    padding: 20px 30px;
+    background: #2c2b44;
+    border-radius: 2mm;
+}
+
+section.secondary .card-footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 
 h1,
 h2,
@@ -85,6 +122,10 @@ h2 {
 h3 {
     font-size: 18px;
     letter-spacing: 5px;
+}
+
+h4 {
+    margin: 0;
 }
 
 p {
@@ -160,6 +201,10 @@ footer p {
     margin-bottom: 15px;
 }
 
+.text-center {
+    text-align: center;
+}
+
 @media (max-width: 991px) {
     h1 {
         font-size: 42px;
@@ -173,7 +218,7 @@ footer p {
         font-size: 14px;
     }
 
-    section .primary {
+    section.primary {
         padding: 20px 60px;
         text-align: center;
     }
@@ -236,11 +281,11 @@ footer p {
         font-size: 13px;
     }
 
-    section .primary {
+    section.primary {
         padding: 20px 35px;
     }
 
-    section .primary h2 {
+    section.primary h2 {
         font-size: 24px;
     }
 
