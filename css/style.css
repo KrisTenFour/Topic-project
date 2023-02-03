@@ -1,5 +1,5 @@
 body {
-    background: #2c2b44;
+    background: #1b1b2a;
 
 }
 
@@ -28,13 +28,26 @@ footer {
     font-family: 'Noto Sans', sans-serif;
 }
 
+header,
+header .button,
+section.primary p,
+section.secondary p {
+    color: white;
+}
+
+section.primary,
+section.secondary,
+footer h3 {
+    color: rgb(215, 209, 40);
+
+}
+
 header {
     padding: 200px 30px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../images/hero-image.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
     text-align: center;
 }
 
@@ -42,7 +55,6 @@ header .button {
     display: inline-block;
     margin-top: 25px;
     padding: 18px 25px;
-    color: white;
     background: #545381;
     border-radius: 2mm;
     font-size: 14px;
@@ -55,8 +67,6 @@ header .button:hover {
 
 section {
     max-width: 100%;
-    padding: 100px;
-    background: #F8F8F8;
 }
 
 section p {
@@ -69,7 +79,9 @@ section h3 {
 }
 
 section.primary {
+    padding: 100px;
     gap: 25px;
+    background: linear-gradient(rgba(44, 43, 50, 0.5), rgba(44, 43, 68, 0.4));
 }
 
 section.primary .img-caption {
@@ -78,12 +90,8 @@ section.primary .img-caption {
 }
 
 section.secondary {
-    padding: 85px 38px;
-    background: white;
-    background-image: url("/images/section-bg-image.jpg");
-    background-position: right top;
-    background-size: 30%;
-    background-repeat: no-repeat;
+    padding: 80px 30px;
+    background: linear-gradient(rgba(103, 102, 160, 0.2), rgba(103, 102, 160, 0.4));
 }
 
 section.secondary .grid-3-col-equal {
@@ -93,8 +101,8 @@ section.secondary .grid-3-col-equal {
 
 section.secondary .card {
     margin-top: 30px;
-    padding: 0 15px;
-    background: #F8F8F8;
+    padding: 0 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), #54538181;
     border-radius: 2mm;
 }
 
@@ -122,10 +130,16 @@ section.secondary .card-footer a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0;
-    line-height: 1.5;
     font-family: 'Syne', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.5;
 }
 
 h1 {
@@ -142,7 +156,7 @@ h3 {
 }
 
 h4 {
-    margin: 0;
+    font-size: 18px;
 }
 
 p {
