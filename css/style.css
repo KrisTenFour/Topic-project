@@ -8,6 +8,20 @@ body {
     margin: 0 auto;
 }
 
+.grid {
+    display: grid;
+}
+
+.grid-2-col-equal {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid img {
+    max-width: 100%;
+    border-radius: 2mm;
+    align-items: center;
+}
+
 header .button,
 section,
 footer {
@@ -54,7 +68,11 @@ section h3 {
     text-transform: uppercase;
 }
 
-section .img-caption {
+section.primary {
+    gap: 25px;
+}
+
+section.primary .img-caption {
     margin: 0;
     font-size: 10px
 }
@@ -102,7 +120,6 @@ section.secondary .card-footer a {
     font-size: 14px;
 }
 
-
 h1,
 h2,
 h3 {
@@ -138,27 +155,16 @@ footer {
     letter-spacing: 0.5px;
 }
 
-.grid {
-    display: grid;
+footer .grid {
     gap: 70px;
 }
 
-.grid img {
-    max-width: 108%;
-    border-radius: 2mm;
-    align-items: center;
-}
-
-.grid-2-col-1fr-1fr {
-    grid-template-columns: 1fr 1fr;
-}
-
-.grid-3-col-1fr-2fr-2fr {
+footer .grid-3-col-1fr-2fr-2fr {
     grid-template-columns: 1fr 2fr 2fr;
 }
 
 footer {
-    padding: 75px 100px;
+    padding: 60px 100px;
     background-image: linear-gradient(rgba(56, 48, 78, 0.9), rgba(56, 48, 78, 0.8)), url("../images/footer-image.jpg");
     background-position: center;
     background-size: cover;
@@ -188,13 +194,13 @@ footer a {
     opacity: 0.7;
 }
 
-footer a {
-    line-height: 1.5;
-}
-
 footer p {
     margin: 0;
     font-size: 11px;
+}
+
+footer a {
+    line-height: 1.5;
 }
 
 .footer-about-website li {
@@ -227,7 +233,7 @@ footer p {
         max-width: 75%;
     }
 
-    .grid-2-col-1fr-1fr {
+    .grid-2-col-equal {
         grid-template-columns: 1fr;
     }
 
