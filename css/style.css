@@ -151,6 +151,11 @@ section.tertiary {
     padding: 65px 45px;
 }
 
+section.tertiary .instagram-container {
+    display: flex;
+    justify-content: center;
+}
+
 h1,
 h2,
 h3,
@@ -305,6 +310,11 @@ footer a {
 
     section.secondary .card-footer {
         margin: 20px 130px;
+    }
+
+    section.tertiary .grid-3-col-equal {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 5px;
     }
 
     footer {
