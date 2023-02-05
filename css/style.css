@@ -18,8 +18,7 @@ body {
 
 .grid img {
     max-width: 100%;
-    border-radius: 2mm;
-    align-items: center;
+    border-radius: 1.5mm;
 }
 
 header .button,
@@ -80,8 +79,11 @@ section h3 {
 
 section.primary {
     padding: 100px;
-    gap: 25px;
     background: linear-gradient(rgba(44, 43, 50, 0.5), rgba(44, 43, 68, 0.4));
+}
+
+section.primary .grid-2-col-equal {
+    gap: 25px;
 }
 
 section.primary .img-caption {
@@ -231,29 +233,57 @@ footer a {
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     h3 {
         font-size: 14px;
     }
 
+    p {
+        font-size: 15px;
+    }
+
+    section.primary .section-img-primary {
+        max-width: 70%;
+    }
+
     section.primary {
-        padding: 20px 60px;
+        padding: 40px 60px;
         text-align: center;
     }
 
-    .grid img {
-        max-width: 75%;
-    }
-
-    .grid-2-col-equal {
+    section.primary .grid-2-col-equal {
         grid-template-columns: 1fr;
     }
 
+    section.secondary {
+        padding: 40px 30px;
+    }
+
+    section.secondary .grid-3-col-equal {
+        gap: 20px;
+    }
+
+    section.secondary .grid-2-col-equal {
+        gap: 0;
+    }
+
+    section.secondary .card-header {
+        margin: 15px auto;
+    }
+
+    section.secondary .card-body h2 {
+        font-size: 22px;
+    }
+
     footer {
-        padding: 50px 100px;
+        padding: 50px 60px;
         ;
+    }
+
+    footer .grid {
+        gap: 50px;
     }
 
     .footer-about-website li {
@@ -262,24 +292,39 @@ footer a {
 }
 
 @media (max-width:791px) {
+    p {
+        font-size: 14px;
+    }
+
     header {
         padding: 150px 30px;
     }
 
+    section.primary {
+        padding: 30px 50px;
+    }
+
     footer {
-        padding: 35px 60px;
+        padding: 35px 50px;
+    }
+
+    footer ul li {
+        font-size: 14px;
     }
 
     .grid {
         gap: 25px;
     }
-
-    .grid-3-col-1fr-2fr-2fr {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width:516px) {
+
+    section.secondary .grid-3-col-equal,
+    footer .grid-3-col-1fr-2fr-2fr {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
     header {
         padding: 100px 30px;
     }
@@ -294,7 +339,7 @@ footer a {
     }
 
     h2 {
-        font-size: 18px;
+        margin-bottom: 15px;
     }
 
     h3 {
@@ -309,6 +354,14 @@ footer a {
         font-size: 24px;
     }
 
+    section.secondary .card {
+        margin-top: 0;
+    }
+
+    section.secondary .grid-2-col-equal {
+        gap: 5px;
+    }
+
     footer {
         padding: 25px 35px;
     }
@@ -321,11 +374,7 @@ footer a {
         margin: 0;
     }
 
-    .grid {
-        gap: 20px;
-    }
-
     .grid img {
-        max-width: 90%;
+        max-width: 100%;
     }
 }
