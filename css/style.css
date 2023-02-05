@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 1250px;
+    max-width: 1350px;
     margin: 0 auto;
 }
 
@@ -95,12 +95,19 @@ section h3 {
 
 section.primary,
 section.tertiary {
-    padding: 100px;
     background: linear-gradient(rgba(44, 43, 50, 0.5), rgba(44, 43, 68, 0.4));
 }
 
+section.primary {
+    padding: 100px 105px;
+}
+
 section.primary .grid-2-col-equal {
-    gap: 25px;
+    gap: 170px;
+}
+
+section.primary #img-map {
+    width: 130%;
 }
 
 section.primary .img-caption {
@@ -114,7 +121,7 @@ section.secondary {
 }
 
 section.secondary .card {
-    padding: 0 16px;
+    padding: 20px 34px;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), #54538181;
     border-radius: 2mm;
 }
@@ -141,7 +148,7 @@ section.secondary .card-footer a {
 }
 
 section.tertiary {
-    padding: 70px 30px;
+    padding: 65px 45px;
 }
 
 h1,
@@ -198,7 +205,7 @@ footer .grid-3-col-1fr-2fr-2fr {
 }
 
 footer {
-    padding: 60px 100px;
+    padding: 55px 100px;
     background-image: linear-gradient(rgba(56, 48, 78, 0.9), rgba(56, 48, 78, 0.8)), url("../images/footer-image.jpg");
     background-position: center;
     background-size: cover;
