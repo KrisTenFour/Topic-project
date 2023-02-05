@@ -83,6 +83,7 @@ section.tertiary .tertiary-title {
 
 section {
     max-width: 100%;
+    padding: 80px 95px;
 }
 
 section p {
@@ -99,10 +100,6 @@ section.tertiary {
     background: linear-gradient(rgba(44, 43, 50, 0.5), rgba(44, 43, 68, 0.4));
 }
 
-section.primary {
-    padding: 100px 105px;
-}
-
 section.primary .grid-2-col-equal {
     gap: 170px;
 }
@@ -117,7 +114,6 @@ section.primary .img-caption {
 }
 
 section.secondary {
-    padding: 70px 30px;
     background: linear-gradient(rgba(103, 102, 160, 0.2), rgba(103, 102, 160, 0.4));
 }
 
@@ -145,10 +141,6 @@ section.secondary .card-footer a {
     color: white;
     text-decoration: none;
     font-size: 14px;
-}
-
-section.tertiary {
-    padding: 65px 45px;
 }
 
 section.tertiary .grid-3-col-equal {
@@ -262,7 +254,7 @@ footer a {
     text-align: center;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1050px) {
 
     section.primary .grid-2-col-equal,
     section.secondary .grid-3-col-equal,
@@ -287,34 +279,47 @@ footer a {
         font-size: 15px;
     }
 
-    section.primary .section-img-primary {
-        width: 60%;
+    header {
+        padding: 150px 30px 125px;
+    }
+
+    header .button {
+        padding: 16px 22px;
+        font-size: 12px;
     }
 
     section.primary,
     section.secondary {
-        padding: 40px 80px;
         text-align: center;
     }
 
+    section.primary,
+    section.tertiary {
+        padding: 40px 80px;
+    }
+
     section.primary .primary-title {
-        margin: 15px auto;
+        margin: 10px auto;
+    }
+
+    section.primary #img-map {
+        width: 60%;
+    }
+
+    section.secondary {
+        padding: 40px 50px;
     }
 
     section.secondary .secondary-title {
         margin-bottom: 30px;
     }
 
-    section.secondary .grid-2-col-equal {
-        gap: 5px;
-    }
-
     section.secondary .card-header {
-        margin: 15px auto;
+        padding-top: 0;
     }
 
-    section.secondary .card-footer {
-        margin: 20px 130px;
+    section.secondary .card-body {
+        padding: 15px 50px 5px;
     }
 
     footer {
@@ -342,10 +347,11 @@ footer a {
     }
 
     header {
-        padding: 150px 30px;
+        padding: 130px 30px 100px;
     }
 
-    section.primary {
+    section.primary,
+    section.tertiary {
         padding: 30px 50px;
     }
 
@@ -358,19 +364,11 @@ footer a {
     }
 
     section.secondary {
-        padding: 40px 50px;
+        padding: 40px 30px;
     }
 
     section.secondary .secondary-title {
         margin-bottom: 25px;
-    }
-
-    section.secondary .card {
-        padding: 15px 35px;
-    }
-
-    section.secondary .card-footer {
-        margin: 20px 155px;
     }
 
     section.secondary .grid-2-col-equal {
@@ -387,74 +385,31 @@ footer a {
 }
 
 @media (max-width:516px) {
-
-    section.secondary .grid-3-col-equal,
-    footer .grid-3-col-1fr-2fr-2fr {
-        gap: 15px;
-    }
-
-    header {
-        padding: 100px 30px;
-    }
-
-    header .button {
-        padding: 14px 22px;
-        font-size: 13px;
-    }
-
     h1 {
-        font-size: 34px;
+        font-size: 40px;
     }
 
     h2 {
-        margin-bottom: 15px;
+        font-size: 22px;
     }
 
-    h3 {
-        font-size: 13px;
+    p.warning {
+        font-size: 11px;
     }
 
-    section.primary {
-        padding: 20px 35px;
-    }
-
-    section.primary .primary-title {
-        margin: 10px;
+    section.primary #img-map {
+        width: 95%;
     }
 
     section.primary h2 {
         font-size: 24px;
     }
 
-    section.secondary .card {
-        padding: 0;
-    }
-
-    section.secondary .card-header {
-        margin-top: 0;
+    section.secondary {
+        padding: 40px 20px;
     }
 
     section.secondary .card-body {
-        margin: 15px 35px;
-    }
-
-    section.secondary .card-footer {
-        margin: 15px 155px;
-    }
-
-    section.secondary .grid-2-col-equal {
-        gap: 5px;
-    }
-
-    footer {
-        padding: 25px 35px;
-    }
-
-    footer ul li {
-        font-size: 13px;
-    }
-
-    footer h3 {
-        margin: 0;
+        padding: 15px 40px 5px;
     }
 }
