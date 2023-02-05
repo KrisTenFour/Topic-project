@@ -167,6 +167,10 @@ p {
     font-size: 16px;
 }
 
+p.warning {
+    font-size: 12px;
+}
+
 p,
 footer {
     color: white;
