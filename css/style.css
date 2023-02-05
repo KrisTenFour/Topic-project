@@ -26,8 +26,9 @@ body {
     border-radius: 1.5mm;
 }
 
-.embed {
+.embed-spotify {
     width: 100%;
+    max-height: 80px;
 }
 
 header .button,
@@ -121,13 +122,12 @@ section.secondary {
 }
 
 section.secondary .card {
-    padding: 20px 34px;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), #54538181;
-    border-radius: 2mm;
+    border-radius: 4mm;
 }
 
-section.secondary .card-header {
-    margin: 25px auto;
+section.secondary .card-body {
+    padding: 20px 25px 0;
 }
 
 section.secondary .card-body h2 {
@@ -135,7 +135,7 @@ section.secondary .card-body h2 {
 }
 
 section.secondary .card-footer {
-    margin: 20px auto;
+    margin: 20px;
     padding: 20px 30px;
     background: #2c2b44;
     border-radius: 2mm;
