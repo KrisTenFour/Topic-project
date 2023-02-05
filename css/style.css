@@ -1,156 +1,10 @@
 body {
     background: #1b1b2a;
-
 }
 
 .container {
-    max-width: 1350px;
+    max-width: 1250px;
     margin: 0 auto;
-}
-
-.grid {
-    display: grid;
-}
-
-.grid-2-col-equal {
-    grid-template-columns: 1fr 1fr;
-}
-
-.grid-3-col-equal {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.grid img {
-    width: 100%;
-    border-radius: 1.5mm;
-}
-
-.embed-spotify {
-    width: 100%;
-    max-height: 80px;
-}
-
-header .button,
-section,
-p,
-footer {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-header,
-header .button,
-section.primary p,
-section.secondary p {
-    color: white;
-}
-
-section.primary,
-section.secondary,
-section.tertiary,
-footer h3 {
-    color: rgb(215, 209, 40);
-
-}
-
-header {
-    padding: 200px 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../images/hero-image.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-
-header .button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 18px 25px;
-    background: #545381;
-    border-radius: 2mm;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-header .button:hover {
-    background: #2c2b44;
-}
-
-section.secondary .secondary-title,
-section.tertiary .tertiary-title {
-    margin-bottom: 30px;
-}
-
-section {
-    max-width: 100%;
-    padding: 80px 95px;
-}
-
-section p {
-    color: black;
-}
-
-section h3 {
-    opacity: 40%;
-    text-transform: uppercase;
-}
-
-section.primary,
-section.tertiary {
-    background: linear-gradient(rgba(44, 43, 50, 0.5), rgba(44, 43, 68, 0.4));
-}
-
-section.primary .grid-2-col-equal {
-    gap: 170px;
-}
-
-section.primary #img-map {
-    width: 130%;
-}
-
-section.primary .img-caption {
-    margin: 0;
-    font-size: 10px
-}
-
-section.secondary {
-    background: linear-gradient(rgba(103, 102, 160, 0.2), rgba(103, 102, 160, 0.4));
-}
-
-section.secondary .card {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), #54538181;
-    border-radius: 4mm;
-}
-
-section.secondary .card-body {
-    padding: 20px 25px 0;
-}
-
-section.secondary .card-body h2 {
-    font-size: 25px;
-}
-
-section.secondary .card-footer {
-    margin: 20px;
-    padding: 20px 30px;
-    background: #2c2b44;
-    border-radius: 2mm;
-}
-
-section.secondary .card-footer a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-section.tertiary .grid-3-col-equal {
-    grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
-    gap: 5px;
-}
-
-section.tertiary .instagram-container {
-    display: flex;
-    justify-content: center;
 }
 
 h1,
@@ -185,7 +39,7 @@ h4 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 p.warning {
@@ -194,8 +48,138 @@ p.warning {
 
 p,
 footer {
-    color: white;
     letter-spacing: 0.5px;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-2-col-equal {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-col-equal {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 1.5mm;
+}
+
+.embed-spotify {
+    width: 100%;
+    max-height: 80px;
+}
+
+header,
+footer {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header,
+p,
+a,
+footer {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+section.primary,
+section.secondary,
+section.tertiary,
+footer h3 {
+    color: #d7d128;
+}
+
+header {
+    padding: 200px 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../images/hero-image.jpg");
+}
+
+header .button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 18px 25px;
+    background: #545381;
+    border-radius: 2mm;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+header .button:hover {
+    background: #2c2b44;
+}
+
+section.secondary .secondary-title,
+section.tertiary .tertiary-title {
+    margin-bottom: 30px;
+}
+
+section.primary,
+section.tertiary {
+    background: linear-gradient(rgba(44, 43, 50, 0.5), rgba(44, 43, 68, 0.4));
+}
+
+section {
+    max-width: 100%;
+    padding: 80px 90px;
+}
+
+section.primary .grid-2-col-equal {
+    gap: 170px;
+}
+
+section.primary #img-map {
+    width: 130%;
+}
+
+section.primary .img-caption {
+    margin: 0;
+    font-size: 10px
+}
+
+section.secondary {
+    background: linear-gradient(rgba(103, 102, 160, 0.2), rgba(103, 102, 160, 0.4));
+}
+
+section.secondary .card {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), #54538181;
+    border-radius: 4mm;
+}
+
+section.secondary .card-body {
+    padding: 15px 18px 0;
+}
+
+section.secondary .card-body h2 {
+    font-size: 25px;
+}
+
+section.secondary .card-footer {
+    margin: 20px;
+    padding: 20px 30px;
+    background: #2c2b44;
+    border-radius: 2mm;
+}
+
+section.secondary .card-footer a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+section.tertiary .grid-3-col-equal {
+    grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
+    gap: 5px;
+}
+
+section.tertiary .instagram-container {
+    display: flex;
+    justify-content: center;
 }
 
 footer .grid {
@@ -209,9 +193,6 @@ footer .grid-3-col-1fr-2fr-2fr {
 footer {
     padding: 55px 100px;
     background-image: linear-gradient(rgba(56, 48, 78, 0.9), rgba(56, 48, 78, 0.8)), url("../images/footer-image.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 footer h3 {
@@ -233,7 +214,6 @@ footer ul li {
 
 footer ul li,
 footer a {
-    color: white;
     opacity: 0.7;
 }
 
@@ -254,6 +234,11 @@ footer a {
     text-align: center;
 }
 
+.h3-opacity-text {
+    opacity: 40%;
+    text-transform: uppercase;
+}
+
 @media (max-width: 1050px) {
 
     section.primary .grid-2-col-equal,
@@ -261,6 +246,10 @@ footer a {
     footer .grid-3-col-1fr-2fr-2fr {
         grid-template-columns: 1fr;
         gap: 25px;
+    }
+
+    section {
+        padding: 40px 70px;
     }
 
     h1 {
@@ -271,12 +260,9 @@ footer a {
         font-size: 28px;
     }
 
-    h3 {
-        font-size: 14px;
-    }
-
+    h3,
     p {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     header {
@@ -285,17 +271,11 @@ footer a {
 
     header .button {
         padding: 16px 22px;
-        font-size: 12px;
     }
 
     section.primary,
     section.secondary {
         text-align: center;
-    }
-
-    section.primary,
-    section.tertiary {
-        padding: 40px 80px;
     }
 
     section.primary .primary-title {
@@ -304,10 +284,6 @@ footer a {
 
     section.primary #img-map {
         width: 60%;
-    }
-
-    section.secondary {
-        padding: 40px 50px;
     }
 
     section.secondary .secondary-title {
@@ -336,23 +312,16 @@ footer a {
 }
 
 @media (max-width:791px) {
-
-    section.secondary .grid-3-col-equal,
-    footer .grid-3-col-1fr-2fr-2fr {
-        gap: 25px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
     header {
         padding: 130px 30px 100px;
     }
 
-    section.primary,
-    section.tertiary {
-        padding: 30px 50px;
+    header .button {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 40px 64px;
     }
 
     section.primary .primary-title {
@@ -361,10 +330,6 @@ footer a {
 
     section.primary .grid-2-col-equal {
         gap: 20px;
-    }
-
-    section.secondary {
-        padding: 40px 30px;
     }
 
     section.secondary .secondary-title {
@@ -384,7 +349,7 @@ footer a {
     }
 }
 
-@media (max-width:516px) {
+@media (max-width: 620px) {
     h1 {
         font-size: 40px;
     }
@@ -397,16 +362,16 @@ footer a {
         font-size: 11px;
     }
 
+    section {
+        padding: 40px 56px;
+    }
+
     section.primary #img-map {
         width: 95%;
     }
 
     section.primary h2 {
         font-size: 24px;
-    }
-
-    section.secondary {
-        padding: 40px 20px;
     }
 
     section.secondary .card-body {
