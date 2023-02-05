@@ -162,13 +162,6 @@ section.secondary .card-body h2 {
     font-size: 25px;
 }
 
-/* section.secondary .card-footer {
-    margin: 20px;
-    padding: 20px 30px;
-    background: #2c2b44;
-    border-radius: 2mm;
-} */
-
 section.secondary .card-footer a {
     font-size: 14px;
 }
@@ -355,5 +348,9 @@ footer a {
 
     section.secondary .card-body {
         padding: 15px 40px 5px;
+    }
+
+    section.tertiary {
+        padding: 40px 1px;
     }
 }
