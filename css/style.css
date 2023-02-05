@@ -17,7 +17,7 @@ body {
 }
 
 .grid img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 1.5mm;
 }
 
@@ -92,8 +92,12 @@ section.primary .img-caption {
 }
 
 section.secondary {
-    padding: 80px 30px;
+    padding: 70px 30px;
     background: linear-gradient(rgba(103, 102, 160, 0.2), rgba(103, 102, 160, 0.4));
+}
+
+section.secondary .secondary-title {
+    margin-bottom: 30px;
 }
 
 section.secondary .grid-3-col-equal {
@@ -102,7 +106,6 @@ section.secondary .grid-3-col-equal {
 }
 
 section.secondary .card {
-    margin-top: 30px;
     padding: 0 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), #54538181;
     border-radius: 2mm;
@@ -117,8 +120,7 @@ section.secondary .card-body h2 {
 }
 
 section.secondary .card-footer {
-    display: block;
-    margin: 20px auto 20px;
+    margin: 20px auto;
     padding: 20px 30px;
     background: #2c2b44;
     border-radius: 2mm;
@@ -228,12 +230,20 @@ footer a {
 }
 
 @media (max-width: 991px) {
+
+    section.primary .grid-2-col-equal,
+    section.secondary .grid-3-col-equal,
+    footer .grid-3-col-1fr-2fr-2fr {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
     h1 {
-        font-size: 42px;
+        font-size: 46px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     h3 {
@@ -245,45 +255,41 @@ footer a {
     }
 
     section.primary .section-img-primary {
-        max-width: 70%;
+        width: 60%;
     }
 
-    section.primary {
-        padding: 40px 60px;
+    section.primary,
+    section.secondary {
+        padding: 40px 80px;
         text-align: center;
     }
 
-    section.primary .grid-2-col-equal {
-        grid-template-columns: 1fr;
+    section.primary .primary-title {
+        margin: 15px auto;
     }
 
-    section.secondary {
-        padding: 40px 30px;
-    }
-
-    section.secondary .grid-3-col-equal {
-        gap: 20px;
+    section.secondary .secondary-title {
+        margin-bottom: 30px;
     }
 
     section.secondary .grid-2-col-equal {
-        gap: 0;
+        gap: 5px;
     }
 
     section.secondary .card-header {
         margin: 15px auto;
     }
 
-    section.secondary .card-body h2 {
-        font-size: 22px;
+    section.secondary .card-footer {
+        margin: 20px 130px;
     }
 
     footer {
         padding: 50px 60px;
-        ;
     }
 
-    footer .grid {
-        gap: 50px;
+    footer ul li {
+        font-size: 14px;
     }
 
     .footer-about-website li {
@@ -292,6 +298,12 @@ footer a {
 }
 
 @media (max-width:791px) {
+
+    section.secondary .grid-3-col-equal,
+    footer .grid-3-col-1fr-2fr-2fr {
+        gap: 25px;
+    }
+
     p {
         font-size: 14px;
     }
@@ -304,6 +316,34 @@ footer a {
         padding: 30px 50px;
     }
 
+    section.primary .primary-title {
+        margin: 10px;
+    }
+
+    section.primary .grid-2-col-equal {
+        gap: 20px;
+    }
+
+    section.secondary {
+        padding: 40px 50px;
+    }
+
+    section.secondary .secondary-title {
+        margin-bottom: 25px;
+    }
+
+    section.secondary .card {
+        padding: 15px 35px;
+    }
+
+    section.secondary .card-footer {
+        margin: 20px 155px;
+    }
+
+    section.secondary .grid-2-col-equal {
+        gap: 15px;
+    }
+
     footer {
         padding: 35px 50px;
     }
@@ -311,17 +351,12 @@ footer a {
     footer ul li {
         font-size: 14px;
     }
-
-    .grid {
-        gap: 25px;
-    }
 }
 
 @media (max-width:516px) {
 
     section.secondary .grid-3-col-equal,
     footer .grid-3-col-1fr-2fr-2fr {
-        grid-template-columns: 1fr;
         gap: 15px;
     }
 
@@ -350,12 +385,28 @@ footer a {
         padding: 20px 35px;
     }
 
+    section.primary .primary-title {
+        margin: 10px;
+    }
+
     section.primary h2 {
         font-size: 24px;
     }
 
     section.secondary .card {
+        padding: 0;
+    }
+
+    section.secondary .card-header {
         margin-top: 0;
+    }
+
+    section.secondary .card-body {
+        margin: 15px 35px;
+    }
+
+    section.secondary .card-footer {
+        margin: 15px 155px;
     }
 
     section.secondary .grid-2-col-equal {
@@ -372,9 +423,5 @@ footer a {
 
     footer h3 {
         margin: 0;
-    }
-
-    .grid img {
-        max-width: 100%;
     }
 }
