@@ -249,7 +249,7 @@ footer a {
     }
 
     section {
-        padding: 40px 70px;
+        padding: 40px 100px;
     }
 
     h1 {
@@ -261,7 +261,8 @@ footer a {
     }
 
     h3,
-    p {
+    p,
+    footer ul li {
         font-size: 14px;
     }
 
@@ -278,10 +279,6 @@ footer a {
         text-align: center;
     }
 
-    section.primary .primary-title {
-        margin: 10px auto;
-    }
-
     section.primary #img-map {
         width: 60%;
     }
@@ -290,20 +287,12 @@ footer a {
         margin-bottom: 30px;
     }
 
-    section.secondary .card-header {
-        padding-top: 0;
-    }
-
     section.secondary .card-body {
         padding: 15px 50px 5px;
     }
 
     footer {
         padding: 50px 60px;
-    }
-
-    footer ul li {
-        font-size: 14px;
     }
 
     .footer-about-website li {
@@ -321,15 +310,11 @@ footer a {
     }
 
     section {
-        padding: 40px 64px;
+        padding: 40px 80px;
     }
 
     section.primary .primary-title {
         margin: 10px;
-    }
-
-    section.primary .grid-2-col-equal {
-        gap: 20px;
     }
 
     section.secondary .secondary-title {
@@ -343,10 +328,6 @@ footer a {
     footer {
         padding: 35px 50px;
     }
-
-    footer ul li {
-        font-size: 14px;
-    }
 }
 
 @media (max-width: 620px) {
@@ -354,7 +335,7 @@ footer a {
         font-size: 40px;
     }
 
-    h2 {
+    header h2 {
         font-size: 22px;
     }
 
@@ -368,10 +349,6 @@ footer a {
 
     section.primary #img-map {
         width: 95%;
-    }
-
-    section.primary h2 {
-        font-size: 24px;
     }
 
     section.secondary .card-body {
