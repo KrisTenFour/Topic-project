@@ -16,13 +16,23 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-col-equal {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
 .grid img {
     width: 100%;
     border-radius: 1.5mm;
 }
 
+.embed {
+    width: 100%;
+}
+
 header .button,
 section,
+p,
 footer {
     font-family: 'Noto Sans', sans-serif;
 }
@@ -36,6 +46,7 @@ section.secondary p {
 
 section.primary,
 section.secondary,
+section.tertiary,
 footer h3 {
     color: rgb(215, 209, 40);
 
@@ -64,6 +75,11 @@ header .button:hover {
     background: #2c2b44;
 }
 
+section.secondary .secondary-title,
+section.tertiary .tertiary-title {
+    margin-bottom: 30px;
+}
+
 section {
     max-width: 100%;
 }
@@ -77,7 +93,8 @@ section h3 {
     text-transform: uppercase;
 }
 
-section.primary {
+section.primary,
+section.tertiary {
     padding: 100px;
     background: linear-gradient(rgba(44, 43, 50, 0.5), rgba(44, 43, 68, 0.4));
 }
@@ -94,15 +111,6 @@ section.primary .img-caption {
 section.secondary {
     padding: 70px 30px;
     background: linear-gradient(rgba(103, 102, 160, 0.2), rgba(103, 102, 160, 0.4));
-}
-
-section.secondary .secondary-title {
-    margin-bottom: 30px;
-}
-
-section.secondary .grid-3-col-equal {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
 }
 
 section.secondary .card {
@@ -130,6 +138,10 @@ section.secondary .card-footer a {
     color: white;
     text-decoration: none;
     font-size: 14px;
+}
+
+section.tertiary {
+    padding: 70px 30px;
 }
 
 h1,
