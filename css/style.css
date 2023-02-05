@@ -81,11 +81,6 @@ a {
     gap: 14px;
 }
 
-.grid img {
-    width: 100%;
-    border-radius: 1.5mm;
-}
-
 header,
 footer {
     background-position: center;
@@ -138,6 +133,7 @@ section.primary .grid-2-col-equal {
 
 section.primary #img-map {
     width: 130%;
+    border-radius: 1.5mm;
 }
 
 section.primary .img-caption {
@@ -159,7 +155,7 @@ section.secondary .card-body {
 }
 
 section.secondary .card-body h2 {
-    font-size: 25px;
+    font-size: 22.5px;
 }
 
 section.secondary .card-footer a {
