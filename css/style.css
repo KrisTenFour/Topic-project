@@ -134,6 +134,7 @@ section.primary .grid-2-col-equal {
 section.primary #img-map {
     width: 130%;
     border-radius: 1.5mm;
+    filter: contrast(125%);
 }
 
 section.primary .img-caption {
