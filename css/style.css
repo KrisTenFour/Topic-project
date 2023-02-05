@@ -51,6 +51,23 @@ footer {
     letter-spacing: 0.5px;
 }
 
+a {
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    margin: 15px auto 20px;
+    padding: 18px 25px;
+    background: #545381;
+    border-radius: 2mm;
+    font-size: 14px;
+}
+
+.button:hover {
+    background: #2c2b44;
+}
+
 .grid {
     display: grid;
 }
@@ -91,25 +108,6 @@ footer h3 {
     color: #d7d128;
 }
 
-header {
-    padding: 200px 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../images/hero-image.jpg");
-}
-
-header .button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 18px 25px;
-    background: #545381;
-    border-radius: 2mm;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-header .button:hover {
-    background: #2c2b44;
-}
-
 section.secondary .secondary-title,
 section.tertiary .tertiary-title {
     margin-bottom: 30px;
@@ -118,6 +116,15 @@ section.tertiary .tertiary-title {
 section.primary,
 section.tertiary {
     background: linear-gradient(rgba(44, 43, 50, 0.5), rgba(44, 43, 68, 0.4));
+}
+
+header {
+    padding: 200px 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("../images/hero-image.jpg");
+}
+
+header .button {
+    margin: 25px auto 0;
 }
 
 section {
@@ -155,16 +162,15 @@ section.secondary .card-body h2 {
     font-size: 25px;
 }
 
-section.secondary .card-footer {
+/* section.secondary .card-footer {
     margin: 20px;
     padding: 20px 30px;
     background: #2c2b44;
     border-radius: 2mm;
-}
+} */
 
 section.secondary .card-footer a {
     font-size: 14px;
-    text-decoration: none;
 }
 
 section.tertiary .grid-3-col-equal {
@@ -214,6 +220,7 @@ footer a {
 
 footer a {
     line-height: 1.5;
+    text-decoration: underline;
 }
 
 .footer-about-website li {
