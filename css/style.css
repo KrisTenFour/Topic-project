@@ -57,7 +57,7 @@ a {
 
 .button {
     display: inline-block;
-    margin: 15px auto 20px;
+    margin: 15px auto 35px;
     padding: 18px 25px;
     background: #545381;
     border-radius: 2mm;
@@ -139,7 +139,7 @@ section.primary #img-map {
 
 section.primary .img-caption {
     margin: 0;
-    font-size: 10px
+    font-size: 10px;
 }
 
 section.secondary {
