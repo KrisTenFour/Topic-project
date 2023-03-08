@@ -241,7 +241,7 @@ footer a {
     }
 
     section {
-        padding: 40px 100px;
+        padding: 40px 90px;
     }
 
     h1 {
@@ -292,7 +292,7 @@ footer a {
     }
 }
 
-@media (max-width:791px) {
+@media (max-width:795px) {
     header {
         padding: 130px 30px 100px;
     }
@@ -302,7 +302,7 @@ footer a {
     }
 
     section {
-        padding: 40px 80px;
+        padding: 40px 50px;
     }
 
     section.primary .primary-title {
