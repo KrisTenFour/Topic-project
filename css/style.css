@@ -1,3 +1,7 @@
+:root {
+    --text-color: #d7d128;
+}
+
 body {
     background: #1b1b2a;
 }
@@ -110,12 +114,12 @@ footer {
 section.primary,
 section.secondary,
 section.tertiary,
+section .instagram-comment p,
 footer h3 {
-    color: #d7d128;
+    color: var(--text-color);
 }
 
-section.secondary .secondary-title,
-section.tertiary .tertiary-title {
+section.secondary .secondary-title {
     margin-bottom: 30px;
 }
 
@@ -174,9 +178,18 @@ section.secondary .card-footer a {
     font-size: 14px;
 }
 
+section.tertiary .tertiary-title {
+    margin-bottom: 13px;
+}
+
 section.tertiary .grid-3-col-equal {
     grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
     gap: 5px;
+}
+
+section.tertiary .instagram-comment {
+    text-align: center;
+    opacity: 0.4;
 }
 
 section.tertiary .instagram-container {
