@@ -55,6 +55,17 @@ a {
     text-decoration: none;
 }
 
+#banner {
+    background-color: #222235;
+}
+
+#banner p {
+    margin: 0;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
 .button {
     display: inline-block;
     margin: 15px auto 35px;
@@ -337,6 +348,10 @@ footer a {
 
     section {
         padding: 40px 20px;
+    }
+
+    section.primary {
+        padding-bottom: 5px;
     }
 
     section.primary #img-map {
