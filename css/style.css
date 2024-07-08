@@ -351,7 +351,7 @@ footer a {
     }
 
     section.primary {
-        padding-bottom: 2px;
+        padding-bottom: 0;
     }
 
     section.primary #img-map {
