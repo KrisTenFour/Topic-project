@@ -376,6 +376,6 @@ footer a {
     }
 
     section.tertiary {
-        padding: 40px 1px;
+        display: none;
     }
 }
